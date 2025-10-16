@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAE301 Aésop</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="icon" href="assets/icon.png" />
+  </head>
+  <body class="font-suisse bg-fond-white text-bouton">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 border-b border-[#d1d5dc] bg-fond-white">
+      <div
+        class="mx-auto flex max-w-[1150px] items-center justify-between px-6 py-5"
+      >
+        <div class="flex items-center gap-10">
+          <img src="assets/logo.svg" alt="Aesop" class="h-6" />
+          <nav
+            class="hidden gap-8 text-[11px] tracking-[1.1px] uppercase md:flex"
+          >
+            <a href="pagesoinspeau.html" class="hover:underline">Soins de la peau</a>
+            <a href="pagesoinscorps.html" class="hover:underline">Soins du corps</a>
+            <a href="pagesoinscapillaires.html" class="hover:underline">Soins capillaires</a>
+          </nav>
+        </div>
+        <div class="flex items-center gap-6">
+          <img src="assets/loupe.svg" class="h-5 w-5" alt="Search" />
+           <a href="pagepanier.html">
+            <img src="assets/panier.svg" class="h-5 w-5" alt="Cart" />
+          </a>
+          <a href="pageconnexioncompte.html">
+            <img src="assets/compte.svg" class="h-5 w-5" alt="Account" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative h-[550px] md:h-[600px]">
+      <img
+        src="assets/fond accueil.png"
+        alt="Hero"
+        class="absolute inset-0 h-full w-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div
+        class="relative z-10 flex h-full items-center justify-center px-6 text-center"
+      >
+        <div class="max-w-[550px] text-[#f8f6e9]">
+          <p class="mb-4 text-[11px] tracking-[1.65px] uppercase">Nouveau</p>
+          <h1 class="mb-6 text-[40px] leading-tight font-semibold">
+            L’art du soin quotidien
+          </h1>
+          <p class="mb-8 text-[14px] leading-[22px]">
+            Une sélection de formulations botaniques soigneusement élaborées
+            pour nourrir la peau, le corps et les cheveux. Chaque produit
+            incarne notre engagement envers des ingrédients d'origine végétale
+            et une efficacité éprouvée, pour un rituel de beauté conscient et
+            raffiné.
+          </p>
+          <div class="flex flex-col justify-center gap-4 sm:flex-row">
+            <button
+              class="bg-bouton px-10 py-4 text-[11px] tracking-[1.5px] text-[#f8f6e9] uppercase"
+            >
+              Explorer la gamme
+            </button>
+            <button
+              class="border border-[#f8f6e9] px-10 py-4 text-[11px] tracking-[1.5px] text-[#f8f6e9] uppercase"
+            >
+              Click & Collect
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contenu principal -->
+    <main class="mx-auto max-w-[1150px] space-y-24 px-6 py-20">
+      <!-- Section -->
+      <section>
+        <h2 class="mb-4 text-[36px]">Soins de la peau</h2>
+        <p class="mb-16 max-w-[650px] text-[14px]">
+          Des formulations soigneusement élaborées pour purifier, hydrater et
+          protéger la peau. Chaque soin répond aux besoins quotidiens avec des
+          ingrédients botaniques sélectionnés.
+        </p>
+
+        <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3">
+          <!-- Produit -->
+          <div class="flex flex-col items-center text-center">
+            <img
+              src="assets/soins peau 1.webp"
+              alt="Hydra-Peel"
+              class="mb-6 h-[400px] object-contain"
+            />
+            <h3 class="mb-2 text-[20px] font-semibold">Hydra-Peel Essence</h3>
+            <p class="mb-6 text-[13px]">
+              Sérum exfoliant doux à base d’enzymes de poire et acide lactique,
+              pour un teint lumineux.
+            </p>
+            <button
+              class="flex w-full items-center justify-between bg-bouton px-8 py-3 text-[15px] font-light tracking-[1.5px] text-fond-white uppercase transition hover:bg-bouton-hover"
+            >
+              Voir le produit
+              <img src="assets/fleche.svg" alt="" class="ml-4 h-7 w-7" />
+            </button>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <img
+              src="assets/soins peau 2.webp"
+              alt="Mist"
+              class="mb-6 h-[400px] object-contain"
+            />
+            <h3 class="mb-2 text-[20px] font-semibold">Urban Shield Mist</h3>
+            <p class="mb-6 text-[13px]">
+              Brume protectrice anti-pollution à base d’algues et d’extraits de
+              thé vert.
+            </p>
+            <button
+              class="flex w-full items-center justify-between bg-bouton px-8 py-3 text-[15px] font-light tracking-[1.5px] text-fond-white uppercase transition hover:bg-bouton-hover"
+            >
+              Voir le produit
+              <img src="assets/fleche.svg" alt="" class="ml-4 h-7 w-7" />
+            </button>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <img
+              src="assets/soins peau 3.webp"
+              alt="Eye Gel"
+              class="mb-6 h-[400px] object-contain"
+            />
+            <h3 class="mb-2 text-[20px] font-semibold">Bio-Lumino Eye Gel</h3>
+            <p class="mb-6 text-[13px]">
+              Gel contour des yeux à la luminescine végétale pour réduire poches
+              et cernes.
+            </p>
+            <button
+              class="flex w-full items-center justify-between bg-bouton px-8 py-3 text-[15px] font-light tracking-[1.5px] text-fond-white uppercase transition hover:bg-bouton-hover"
+            >
+              Voir le produit
+              <img src="assets/fleche.svg" alt="" class="ml-4 h-7 w-7" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Autres sections -->
+      <section>
+        <h2 class="mb-4 text-[36px]">Soins du corps</h2>
+        <p class="mb-16 max-w-[650px] text-[14px]">
+          Une collection de soins corporels enrichis en actifs botaniques pour
+          nourrir, apaiser et sublimer la peau. Des textures sensorielles pour
+          un rituel quotidien réconfortant.
+        </p>
+
+        <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3">
+          <div class="flex flex-col items-center text-center">
+            <img
+              src="assets/soins corps 1.webp"
+              alt="Muscle Balm"
+              class="mb-6 h-[400px] object-contain"
+            />
+            <h3 class="mb-2 text-[20px] font-semibold">Aromatic Muscle Balm</h3>
+            <p class="mb-6 text-[13px]">
+              Baume chauffant relaxant aux huiles de romarin et eucalyptus pour
+              détendre les muscles.
+            </p>
+            <button
+              class="flex w-full items-center justify-between bg-bouton px-8 py-3 text-[15px] font-light tracking-[1.5px] text-fond-white uppercase transition hover:bg-bouton-hover"
+            >
+              Voir le produit
+              <img src="assets/fleche.svg" alt="" class="ml-4 h-7 w-7" />
+            </button>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <img
+              src="assets/soins corps 2.webp"
+              alt="Silk Serum"
+              class="mb-6 h-[400px] object-contain"
+            />
+            <h3 class="mb-2 text-[20px] font-semibold">Silk Body Serum</h3>
+            <p class="mb-6 text-[13px]">
+              Sérum corporel hydratant et satiné, à base de fleurs de cerisier
+              et beurre de karité.
+            </p>
+            <button
+              class="flex w-full items-center justify-between bg-bouton px-8 py-3 text-[15px] font-light tracking-[1.5px] text-fond-white uppercase transition hover:bg-bouton-hover"
+            >
+              Voir le produit
+              <img src="assets/fleche.svg" alt="" class="ml-4 h-7 w-7" />
+            </button>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <img
+              src="assets/soins corps 3.webp"
+              alt="Clay Mask"
+              class="mb-6 h-[400px] object-contain"
+            />
+            <h3 class="mb-2 text-[20px] font-semibold">Desert Clay Mask</h3>
+            <p class="mb-6 text-[13px]">
+              Masque corporel exfoliant aux argiles naturelles et minéraux du
+              désert.
+            </p>
+            <button
+              class="flex w-full items-center justify-between bg-bouton px-8 py-3 text-[15px] font-light tracking-[1.5px] text-fond-white uppercase transition hover:bg-bouton-hover"
+            >
+              Voir le produit
+              <img src="assets/fleche.svg" alt="" class="ml-4 h-7 w-7" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="mb-4 text-[36px]">Soins capillaires</h2>
+        <p class="mb-16 max-w-[650px] text-[14px]">
+          Des soins capillaires formulés avec des extraits végétaux pour
+          fortifier et revitaliser les cheveux. Pour un cuir chevelu sain et une
+          chevelure éclatante de santé.
+        </p>
+
+        <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3">
+          <div class="flex flex-col items-center text-center">
+            <img
+              src="assets/soins capillaires 1.webp"
+              alt="Scalp"
+              class="mb-6 h-[400px] object-contain"
+            />
+            <h3 class="mb-2 text-[20px] font-semibold">
+              Botanical Scalp Elixir
+            </h3>
+            <p class="mb-6 text-[13px]">
+              Huile légère pour cuir chevelu sec ou irrité, à base de romarin,
+              camomille et jojoba.
+            </p>
+            <button
+              class="flex w-full items-center justify-between bg-bouton px-8 py-3 text-[15px] font-light tracking-[1.5px] text-fond-white uppercase transition hover:bg-bouton-hover"
+            >
+              Voir le produit
+              <img src="assets/fleche.svg" alt="" class="ml-4 h-7 w-7" />
+            </button>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <img
+              src="assets/soins capillaires 2.webp"
+              alt="Hair Mist"
+              class="mb-6 h-[400px] object-contain"
+            />
+            <h3 class="mb-2 text-[20px] font-semibold">Renewing Hair Mist</h3>
+            <p class="mb-6 text-[13px]">
+              Spray revitalisant pour cheveux abîmés avec protéine de quinoa et
+              aloe vera.
+            </p>
+            <button
+              class="flex w-full items-center justify-between bg-bouton px-8 py-3 text-[15px] font-light tracking-[1.5px] text-fond-white uppercase transition hover:bg-bouton-hover"
+            >
+              Voir le produit
+              <img src="assets/fleche.svg" alt="" class="ml-4 h-7 w-7" />
+            </button>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <img
+              src="assets/soins capillaires 3.webp"
+              alt="Hair Mask"
+              class="mb-6 h-[400px] object-contain"
+            />
+            <h3 class="mb-2 text-[20px] font-semibold">
+              Night Repair Hair Mask
+            </h3>
+            <p class="mb-6 text-[13px]">
+              Masque capillaire réparateur à laisser poser toute la nuit,
+              enrichi en céramides végétales.
+            </p>
+            <button
+              class="flex w-full items-center justify-between bg-bouton px-8 py-3 text-[15px] font-light tracking-[1.5px] text-fond-white uppercase transition hover:bg-bouton-hover"
+            >
+              Voir le produit
+              <img src="assets/fleche.svg" alt="" class="ml-4 h-7 w-7" />
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-bouton text-fond-white">
+      <div class="mx-auto max-w-[1150px] space-y-10 px-6 py-16">
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-4">
+          <div>
+            <h4 class="footer-title">Commande et livraison</h4>
+            <ul class="footer-links">
+              <li>Expédition et retour</li>
+              <li>Click & Collect</li>
+              <li>Assistance client</li>
+              <li>Questions fréquentes</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-title">À propos d’Aesop</h4>
+            <ul class="footer-links">
+              <li>Notre philosophie</li>
+              <li>Ingrédients botaniques</li>
+              <li>Développement durable</li>
+              <li>Nos boutiques</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-title">Services</h4>
+            <ul class="footer-links">
+              <li>Nous contacter</li>
+              <li>Suivi de commande</li>
+              <li>Programmes corporate</li>
+              <li>Cartes cadeaux</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-title">Communication</h4>
+            <p class="mb-4 text-[11px]">
+              Abonnez-vous pour recevoir nos communications et découvrir nos
+              nouveautés.
+            </p>
+            <div class="flex">
+              <input
+                type="email"
+                placeholder="Adresse email"
+                class="flex-1 border border-fond-white bg-transparent px-3 py-2 text-[11px] placeholder-fond-white outline-none"
+              />
+              <button
+                class="bg-fond-white px-4 py-2 text-[10px] tracking-[1.5px] text-bouton uppercase"
+              >
+                Valider
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-between gap-3 border-t border-fond-white pt-6 text-[10px] md:flex-row"
+        >
+          <p>© Aesop 2025</p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">Accessibilité</a>
+            <a href="#">Conditions générales</a>
+            <a href="#">Mentions légales</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

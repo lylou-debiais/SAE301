@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAE 301 Aésop</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="icon" href="assets/icon.png" />
+  </head>
+  <body class="font-suisse bg-fond-white text-bouton">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 border-b border-[#d1d5dc] bg-fond-white">
+      <div
+        class="mx-auto flex max-w-[1150px] items-center justify-between px-6 py-5"
+      >
+        <div class="flex items-center gap-10">
+          <a href="index.html">
+            <img src="assets/logo.svg" alt="Aesop" class="h-6" />
+          </a>
+          <nav
+            class="hidden gap-8 text-[11px] tracking-[1.1px] uppercase md:flex"
+          >
+            <a href="pagesoinspeau.html" class="hover:underline">Soins de la peau</a>
+            <a href="pagesoinscorps.html" class="hover:underline">Soins du corps</a>
+            <a href="pagesoinscapillaires.html" class="hover:underline">Soins capillaires</a>
+          </nav>
+        </div>
+        <div class="flex items-center gap-6">
+          <img src="assets/loupe.svg" class="h-5 w-5" alt="Search" />
+           <a href="pagepanier.html">
+            <img src="assets/panier.svg" class="h-5 w-5" alt="Cart" />
+          </a>
+          <a href="pageconnexioncompte.html">
+            <img src="assets/compte.svg" class="h-5 w-5" alt="Account" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Product Section -->
+    <main class="mx-auto max-w-[1150px] px-6 py-12">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- Product Images -->
+        <div class="space-y-4">
+          <div class="aspect-square bg-white">
+            <img src="assets/soins peau 1.webp" alt="Hydra-Peel Essence" class="w-full h-full object-contain" />
+          </div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="space-y-8">
+          <div>
+            <p class="text-sm uppercase tracking-wider mb-2">Soins du visage innovants</p>
+            <h1 class="text-3xl font-medium mb-4">Hydra-Peel Essence</h1>
+            <p class="text-sm text-gray-600">Sérum exfoliant doux à l'acide glycolique de poire et extrait fermenté pour un teint lumineux sans irritation.</p>
+          </div>
+
+          <!-- Product Options -->
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-sm font-medium mb-3">Format</h3>
+              <div class="grid grid-cols-2 gap-4">
+                <button class="py-3 border border-[#d1d5dc]">30 ml</button>
+                <button class="py-3 border border-[#d1d5dc]">100 ml</button>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-sm font-medium mb-3">Quantité</h3>
+              <div class="flex items-center gap-4 w-32">
+                <button class="w-8 h-8 border border-[#d1d5dc] flex items-center justify-center">-</button>
+                <span class="flex-1 text-center">1</span>
+                <button class="w-8 h-8 border border-[#d1d5dc] flex items-center justify-center">+</button>
+              </div>
+            </div>
+
+            <div class="pt-6 border-t border-[#d1d5dc]">
+              <div class="flex justify-between items-center mb-6">
+                <span class="text-xl font-medium">€45,00</span>
+              </div>
+              <button class="w-full bg-bouton text-white py-4 text-sm uppercase tracking-wider hover:bg-bouton-hover transition">
+                Ajouter au panier
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Details -->
+          <div class="space-y-6 pt-6">
+            <div>
+              <h3 class="text-sm font-medium mb-2">Ingrédients clés</h3>
+              <p class="text-sm text-gray-600">Acide glycolique, extrait de poire, extrait fermenté de riz.</p>
+            </div>
+
+            <div>
+              <h3 class="text-sm font-medium mb-2">Mode d'utilisation</h3>
+              <p class="text-sm text-gray-600">Appliquer matin et soir sur une peau propre et sèche. Masser délicatement jusqu'à absorption complète.</p>
+            </div>
+
+            <div>
+              <h3 class="text-sm font-medium mb-2">Conseils de conservation</h3>
+              <p class="text-sm text-gray-600">Conserver à l'abri de la chaleur directe et de la lumière exposée. Refermer soigneusement après usage.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  <!-- Footer -->
+    <footer class="bg-bouton text-fond-white">
+      <div class="mx-auto max-w-[1150px] space-y-10 px-6 py-16">
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-4">
+          <div>
+            <h4 class="footer-title">Commande et livraison</h4>
+            <ul class="footer-links">
+              <li>Expédition et retour</li>
+              <li>Click & Collect</li>
+              <li>Assistance client</li>
+              <li>Questions fréquentes</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-title">À propos d’Aesop</h4>
+            <ul class="footer-links">
+              <li>Notre philosophie</li>
+              <li>Ingrédients botaniques</li>
+              <li>Développement durable</li>
+              <li>Nos boutiques</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-title">Services</h4>
+            <ul class="footer-links">
+              <li>Nous contacter</li>
+              <li>Suivi de commande</li>
+              <li>Programmes corporate</li>
+              <li>Cartes cadeaux</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-title">Communication</h4>
+            <p class="mb-4 text-[11px]">
+              Abonnez-vous pour recevoir nos communications et découvrir nos
+              nouveautés.
+            </p>
+            <div class="flex">
+              <input
+                type="email"
+                placeholder="Adresse email"
+                class="flex-1 border border-fond-white bg-transparent px-3 py-2 text-[11px] placeholder-fond-white outline-none"
+              />
+              <button
+                class="bg-fond-white px-4 py-2 text-[10px] tracking-[1.5px] text-bouton uppercase"
+              >
+                Valider
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-between gap-3 border-t border-fond-white pt-6 text-[10px] md:flex-row"
+        >
+          <p>© Aesop 2025</p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">Accessibilité</a>
+            <a href="#">Conditions générales</a>
+            <a href="#">Mentions légales</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

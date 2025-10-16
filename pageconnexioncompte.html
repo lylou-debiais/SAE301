@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAE301 Aésop</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="icon" href="assets/icon.png" />
+  </head>
+  <body class="font-suisse bg-fond-white text-bouton">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 border-b border-[#d1d5dc] bg-fond-white">
+      <div
+        class="mx-auto flex max-w-[1150px] items-center justify-between px-6 py-5"
+      >
+        <div class="flex items-center gap-10">
+          <a href="index.html">
+            <img src="assets/logo.svg" alt="Aesop" class="h-6" />
+          </a>
+          <nav
+            class="hidden gap-8 text-[11px] tracking-[1.1px] uppercase md:flex"
+          >
+            <a href="pagesoinspeau.html" class="hover:underline">Soins de la peau</a>
+            <a href="pagesoinscorps.html" class="hover:underline">Soins du corps</a>
+            <a href="pagesoinscapillaires.html" class="hover:underline">Soins capillaires</a>
+          </nav>
+        </div>
+        <div class="flex items-center gap-6">
+          <img src="assets/loupe.svg" class="h-5 w-5" alt="Search" />
+           <a href="pagepanier.html">
+            <img src="assets/panier.svg" class="h-5 w-5" alt="Cart" />
+          </a>
+          <a href="pageconnexioncompte.html">
+            <img src="assets/compte.svg" class="h-5 w-5" alt="Account" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="mx-auto max-w-[450px] px-6 py-12">
+      <div class="text-center mb-10">
+        <h1 class="text-2xl font-medium mb-4">Se connecter à votre compte</h1>
+        <p class="text-sm text-gray-600">Connectez-vous pour accéder à vos commandes et vos favoris</p>
+      </div>
+
+      <!-- Login Form -->
+      <form class="space-y-6">
+        <div>
+          <label for="email" class="block text-sm font-medium mb-2">Adresse email</label>
+          <input 
+            type="email" 
+            id="email" 
+            class="w-full px-4 py-3 border border-[#d1d5dc] focus:outline-none focus:border-bouton"
+            placeholder="exemple@email.com"
+          >
+        </div>
+
+        <div>
+          <label for="password" class="block text-sm font-medium mb-2">Mot de passe</label>
+          <input 
+            type="password" 
+            id="password" 
+            class="w-full px-4 py-3 border border-[#d1d5dc] focus:outline-none focus:border-bouton"
+            placeholder="••••••••"
+          >
+        </div>
+
+        <button class="w-full bg-bouton text-white py-4 text-sm uppercase tracking-wider hover:bg-bouton-hover transition">
+          <a href="index.html">Se connecter</a>
+        </button>
+
+        <div class="flex items-center justify-between">
+          <label class="flex items-center gap-2 text-sm">
+            <input type="checkbox" class="border-[#d1d5dc]">
+            Se souvenir de moi
+          </label>
+          <a href="#" class="text-sm hover:underline">Mot de passe oublié ?</a>
+        </div>
+      </form>
+
+      <!-- Sign Up Section -->
+      <div class="mt-10 pt-10 border-t border-[#d1d5dc] text-center">
+        <p class="text-sm mb-4">Vous n'avez pas de compte ?</p>
+        <a href="pagecreationcompte.html">
+          <button class="w-full border border-bouton py-4 text-sm uppercase tracking-wider hover:bg-bouton hover:text-white transition">
+          S'inscrire
+        </button></a>
+      </div>
+    </main>
+
+ <!-- Footer -->
+    <footer class="bg-bouton text-fond-white">
+      <div class="mx-auto max-w-[1150px] space-y-10 px-6 py-16">
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-4">
+          <div>
+            <h4 class="footer-title">Commande et livraison</h4>
+            <ul class="footer-links">
+              <li>Expédition et retour</li>
+              <li>Click & Collect</li>
+              <li>Assistance client</li>
+              <li>Questions fréquentes</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-title">À propos d’Aesop</h4>
+            <ul class="footer-links">
+              <li>Notre philosophie</li>
+              <li>Ingrédients botaniques</li>
+              <li>Développement durable</li>
+              <li>Nos boutiques</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-title">Services</h4>
+            <ul class="footer-links">
+              <li>Nous contacter</li>
+              <li>Suivi de commande</li>
+              <li>Programmes corporate</li>
+              <li>Cartes cadeaux</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-title">Communication</h4>
+            <p class="mb-4 text-[11px]">
+              Abonnez-vous pour recevoir nos communications et découvrir nos
+              nouveautés.
+            </p>
+            <div class="flex">
+              <input
+                type="email"
+                placeholder="Adresse email"
+                class="flex-1 border border-fond-white bg-transparent px-3 py-2 text-[11px] placeholder-fond-white outline-none"
+              />
+              <button
+                class="bg-fond-white px-4 py-2 text-[10px] tracking-[1.5px] text-bouton uppercase"
+              >
+                Valider
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-between gap-3 border-t border-fond-white pt-6 text-[10px] md:flex-row"
+        >
+          <p>© Aesop 2025</p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">Accessibilité</a>
+            <a href="#">Conditions générales</a>
+            <a href="#">Mentions légales</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

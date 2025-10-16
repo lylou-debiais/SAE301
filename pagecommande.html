@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAE301 Aésop</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="icon" href="assets/icon.png" />
+  </head>
+  <body class="font-suisse bg-fond-white text-bouton">
+     <!-- Header -->
+    <header class="sticky top-0 z-50 border-b border-[#d1d5dc] bg-fond-white">
+      <div
+        class="mx-auto flex max-w-[1150px] items-center justify-between px-6 py-5"
+      >
+        <div class="flex items-center gap-10">
+          <a href="index.html">
+            <img src="assets/logo.svg" alt="Aesop" class="h-6" />
+          </a>
+          <nav
+            class="hidden gap-8 text-[11px] tracking-[1.1px] uppercase md:flex"
+          >
+            <a href="pagesoinspeau.html" class="hover:underline">Soins de la peau</a>
+            <a href="pagesoinscorps.html" class="hover:underline">Soins du corps</a>
+            <a href="pagesoinscapillaires.html" class="hover:underline">Soins capillaires</a>
+          </nav>
+        </div>
+        <div class="flex items-center gap-6">
+          <img src="assets/loupe.svg" class="h-5 w-5" alt="Search" />
+           <a href="pagepanier.html">
+            <img src="assets/panier.svg" class="h-5 w-5" alt="Cart" />
+          </a>
+          <a href="pageconnexioncompte.html">
+            <img src="assets/compte.svg" class="h-5 w-5" alt="Account" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="mx-auto max-w-[1150px] px-6 py-12">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- Delivery Information -->
+        <div>
+          <h1 class="text-2xl font-medium mb-8">Commande</h1>
+          
+          <!-- Personal Information -->
+          <div class="space-y-6 mb-12">
+            <h2 class="text-lg font-medium">Informations de livraison</h2>
+            <div class="grid grid-cols-2 gap-4">
+              <input type="text" placeholder="Prénom" class="px-4 py-3 border border-[#d1d5dc]">
+              <input type="text" placeholder="Nom" class="px-4 py-3 border border-[#d1d5dc]">
+            </div>
+            <input type="text" placeholder="Magasin" class="w-full px-4 py-3 border border-[#d1d5dc]">
+            <input type="email" placeholder="Email" class="w-full px-4 py-3 border border-[#d1d5dc]">
+            <input type="tel" placeholder="Téléphone" class="w-full px-4 py-3 border border-[#d1d5dc]">
+          </div>
+
+          <!-- Delivery Options -->
+          <div class="space-y-6 mb-12">
+            <h2 class="text-lg font-medium">Mode de livraison</h2>
+            <div class="space-y-4">
+              <div class="flex justify-between p-4 border border-[#d1d5dc]">
+                <div>
+                  <h3 class="font-medium">Livraison standard</h3>
+                  <p class="text-sm text-gray-500">2-5 jours ouvrés</p>
+                </div>
+                <p class="font-medium">€5.00</p>
+              </div>
+              <div class="flex justify-between p-4 border border-[#d1d5dc]">
+                <div>
+                  <h3 class="font-medium">Livraison express</h3>
+                  <p class="text-sm text-gray-500">24-48 heures</p>
+                </div>
+                <p class="font-medium">€12.00</p>
+              </div>
+              <div class="flex justify-between p-4 border border-[#d1d5dc] bg-bouton text-white">
+                <div>
+                  <h3 class="font-medium">Click & Collect</h3>
+                  <p class="text-sm">Retrait en boutique sous 2h</p>
+                </div>
+                <p class="font-medium">Gratuit</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Payment -->
+          <div class="space-y-6">
+            <h2 class="text-lg font-medium">Paiement</h2>
+            <div class="grid grid-cols-2 gap-4">
+              <button class="py-3 border border-[#d1d5dc] font-medium">CARTE BANCAIRE</button>
+              <button class="py-3 border border-[#d1d5dc]">PAYPAL</button>
+            </div>
+            <input type="text" placeholder="Numéro de carte" class="w-full px-4 py-3 border border-[#d1d5dc]">
+            <div class="grid grid-cols-2 gap-4">
+              <input type="text" placeholder="MM/AA" class="px-4 py-3 border border-[#d1d5dc]">
+              <input type="text" placeholder="CVV" class="px-4 py-3 border border-[#d1d5dc]">
+            </div>
+          </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div>
+          <div class="border border-[#d1d5dc] p-6 sticky top-24">
+            <h2 class="text-lg font-medium mb-6">Résumé</h2>
+            
+            <!-- Products -->
+            <div class="space-y-4 mb-6">
+              <div class="flex gap-4">
+                <img src="assets/soins peau 1.webp" alt="Hydra-Peel Essence" class="w-20 h-20 object-contain">
+                <div class="flex-1">
+                  <h3 class="text-sm font-medium">Hydra-Peel Essence</h3>
+                  <p class="text-xs text-gray-500">Qté: 1</p>
+                  <p class="text-sm font-medium mt-2">€45.00</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <img src="assets/soins peau 2.webp" alt="Urban Shield Mist" class="w-20 h-20 object-contain">
+                <div class="flex-1">
+                  <h3 class="text-sm font-medium">Urban Shield Mist</h3>
+                  <p class="text-xs text-gray-500">Qté: 1</p>
+                  <p class="text-sm font-medium mt-2">€38.00</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Totals -->
+            <div class="space-y-2 mb-6">
+              <div class="flex justify-between text-sm">
+                <span>Sous-total</span>
+                <span>€83.00</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span>Livraison</span>
+                <span>€5.00</span>
+              </div>
+              <div class="flex justify-between text-sm font-medium pt-4 border-t border-[#d1d5dc]">
+                <span>Total</span>
+                <span>€88.00</span>
+              </div>
+            </div>
+
+            <button class="w-full bg-bouton text-white py-4 text-sm uppercase tracking-wider hover:bg-bouton-hover transition">
+              Valider la commande
+            </button>
+
+            <!-- Guarantees -->
+            <div class="mt-6 text-xs text-gray-500 space-y-2">
+              <p>• Garantie 30 jours</p>
+              <p>• Livraison sûre</p>
+              <p>• Service client 7j/7</p>
+              <p>• Paiement 100% sécurisé</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    </footer>
+  </body>
+</html>

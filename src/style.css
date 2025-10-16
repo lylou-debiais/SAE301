@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --font-main: 'Helvetica Neue', Arial, sans-serif;
+  --color-black: #333;
+  --color-black-hover: #222;
+  --fond-white: #fffef2;
+  --btn-uppercase-spacing: 1.5px;
+  --btn-font-size: 11px;
+  --btn-padding-x: 2rem; /* équivalent à px-8 */
+  --btn-padding-y: 0.75rem; /* équivalent à py-3 */
+  --footer-title-size: 10px;
+  --footer-link-size: 11px;
+}
+
+@theme inline {
+  --color-bouton: var(--color-black);
+  --color-bouton-hover: var(--color-black-hover);
+  --color-fond-white: var(--fond-white);
+}
+
+
+.font-suisse {
+  font-family: var(--font-main);
+}
+
+.btn-black {
+  background-color: var(--color-black);
+  color: var(--text-white);
+  text-transform: uppercase;
+  letter-spacing: var(--btn-uppercase-spacing);
+  font-size: var(--btn-font-size);
+  padding: var(--btn-padding-y) var(--btn-padding-x);
+  transition: background 0.2s;
+}
+
+.btn-black:hover {
+  background-color: var(--color-black-hover);
+}
+
+.footer-title {
+  text-transform: uppercase;
+  font-size: var(--footer-title-size);
+  letter-spacing: var(--btn-uppercase-spacing);
+  margin-bottom: 1rem;
+}
+
+.footer-links li {
+  font-size: var(--footer-link-size);
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.footer-links li:hover {
+  text-decoration: underline;
+}
