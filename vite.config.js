@@ -5,7 +5,7 @@ import { resolve } from "path";
 
 export default defineConfig({
  plugins: [tailwindcss()],
- base: "/", //test
+ base: "SAE301", //test
  build: {
    rollupOptions: {
      input: {
