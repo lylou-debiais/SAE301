@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SAE 301 Aésop</title>
+    <title>SAE301 Aésop</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="src/style.css" />
     <link rel="icon" href="assets/icon.png" />
@@ -15,7 +15,7 @@
         class="mx-auto flex max-w-[1150px] items-center justify-between px-6 py-5"
       >
         <div class="flex items-center gap-10">
-          <a href="index.html">
+          <a href="../index.html">
             <img src="assets/logo.svg" alt="Aesop" class="h-6" />
           </a>
           <nav
@@ -38,70 +38,95 @@
       </div>
     </header>
 
-    <!-- Product Section -->
+    <!-- Main Content -->
     <main class="mx-auto max-w-[1150px] px-6 py-12">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <!-- Product Images -->
-        <div class="space-y-4">
-          <div class="aspect-square bg-white">
-            <img src="assets/soins peau 1.webp" alt="Hydra-Peel Essence" class="w-full h-full object-contain" />
+      <div class="flex justify-between items-center mb-8">
+        <h1 class="text-2xl font-medium">Mon panier</h1>
+        <a href="index.html" class="text-sm hover:underline">Continuer vos achats</a>
+      </div>
+
+      <!-- Cart Items -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div class="lg:col-span-2 space-y-6">
+          <!-- Product 1 -->
+          <div class="flex items-center justify-between p-4 border border-[#d1d5dc]">
+            <div class="flex items-center gap-4">
+              <img src="assets/soins peau 1.webp" alt="Hydra-Peel Essence" class="w-20 h-20 object-contain" />
+              <div>
+                <h3 class="text-sm font-medium">Hydra-Peel Essence</h3>
+                <p class="text-xs text-gray-500">30ml · Jasmin léger</p>
+                <div class="flex items-center gap-4 mt-2">
+                  <button class="text-sm px-2">-</button>
+                  <span class="text-sm">1</span>
+                  <button class="text-sm px-2">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="text-right">
+              <p class="text-sm font-medium">€45.00</p>
+              <button class="text-xs text-gray-500 hover:underline mt-2">Supprimer</button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="flex items-center justify-between p-4 border border-[#d1d5dc]">
+            <div class="flex items-center gap-4">
+              <img src="assets/soins peau 2.webp" alt="Urban Shield Mist" class="w-20 h-20 object-contain" />
+              <div>
+                <h3 class="text-sm font-medium">Urban Shield Mist</h3>
+                <p class="text-xs text-gray-500">Usage quotidien · Format spray</p>
+                <div class="flex items-center gap-4 mt-2">
+                  <button class="text-sm px-2">-</button>
+                  <span class="text-sm">1</span>
+                  <button class="text-sm px-2">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="text-right">
+              <p class="text-sm font-medium">€38.00</p>
+              <button class="text-xs text-gray-500 hover:underline mt-2">Supprimer</button>
+            </div>
           </div>
         </div>
 
-        <!-- Product Info -->
-        <div class="space-y-8">
-          <div>
-            <p class="text-sm uppercase tracking-wider mb-2">Soins du visage innovants</p>
-            <h1 class="text-3xl font-medium mb-4">Hydra-Peel Essence</h1>
-            <p class="text-sm text-gray-600">Sérum exfoliant doux à l'acide glycolique de poire et extrait fermenté pour un teint lumineux sans irritation.</p>
-          </div>
-
-          <!-- Product Options -->
-          <div class="space-y-6">
-            <div>
-              <h3 class="text-sm font-medium mb-3">Format</h3>
-              <div class="grid grid-cols-2 gap-4">
-                <button class="py-3 border border-[#d1d5dc]">30 ml</button>
-                <button class="py-3 border border-[#d1d5dc]">100 ml</button>
+        <!-- Order Summary -->
+        <div class="lg:col-span-1">
+          <div class="border border-[#d1d5dc] p-6">
+            <h2 class="text-lg font-medium mb-4">Résumé</h2>
+            <div class="space-y-2 mb-4">
+              <div class="flex justify-between text-sm">
+                <span>Sous-total</span>
+                <span>€83.00</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span>Livraison</span>
+                <span>€5.00</span>
+              </div>
+            </div>
+            <div class="border-t border-[#d1d5dc] pt-4 mb-6">
+              <div class="flex justify-between text-sm font-medium">
+                <span>Total</span>
+                <span>€88.00</span>
+              </div>
+            </div>
+            <button class="w-full bg-bouton text-white py-4 text-sm uppercase tracking-wider hover:bg-bouton-hover transition">
+              <a href="pagecommande.html">Commander</a>
+            </button>
+            
+            <!-- Promo Code -->
+            <div class="mt-6">
+              <p class="text-sm mb-2">Code promo</p>
+              <div class="flex gap-2">
+                <input type="text" placeholder="Entrez votre code" class="flex-1 px-3 py-2 border border-[#d1d5dc] text-sm" />
+                <button class="bg-[#666] text-white px-4 py-2 text-sm">Appliquer</button>
               </div>
             </div>
 
-            <div>
-              <h3 class="text-sm font-medium mb-3">Quantité</h3>
-              <div class="flex items-center gap-4 w-32">
-                <button class="w-8 h-8 border border-[#d1d5dc] flex items-center justify-center">-</button>
-                <span class="flex-1 text-center">1</span>
-                <button class="w-8 h-8 border border-[#d1d5dc] flex items-center justify-center">+</button>
-              </div>
-            </div>
-
-            <div class="pt-6 border-t border-[#d1d5dc]">
-              <div class="flex justify-between items-center mb-6">
-                <span class="text-xl font-medium">€45,00</span>
-              </div>
-              <a href="pagepanier.html">
-              <button class="w-full bg-bouton text-white py-4 text-sm uppercase tracking-wider hover:bg-bouton-hover transition">
-                Ajouter au panier
-              </button>
-            </a>
-            </div>
-          </div>
-
-          <!-- Product Details -->
-          <div class="space-y-6 pt-6">
-            <div>
-              <h3 class="text-sm font-medium mb-2">Ingrédients clés</h3>
-              <p class="text-sm text-gray-600">Acide glycolique, extrait de poire, extrait fermenté de riz.</p>
-            </div>
-
-            <div>
-              <h3 class="text-sm font-medium mb-2">Mode d'utilisation</h3>
-              <p class="text-sm text-gray-600">Appliquer matin et soir sur une peau propre et sèche. Masser délicatement jusqu'à absorption complète.</p>
-            </div>
-
-            <div>
-              <h3 class="text-sm font-medium mb-2">Conseils de conservation</h3>
-              <p class="text-sm text-gray-600">Conserver à l'abri de la chaleur directe et de la lumière exposée. Refermer soigneusement après usage.</p>
+            <!-- Shipping Info -->
+            <div class="mt-6 text-xs text-gray-500">
+              <p>Livraison gratuite</p>
+              <p>Livraison gratuite pour toute commande supérieure à €75.</p>
+              <p>Délai de livraison: 2-5 jours ouvrés.</p>
             </div>
           </div>
         </div>
